@@ -37,6 +37,11 @@
 7.  npm install react react-dom
 8.  npx parcel index.html
 
+# Upload code from vs code steps:
+  - git add .
+  - git commit -m "updating"
+  - git push
+
 # Parcel
 
 - Dev Build
