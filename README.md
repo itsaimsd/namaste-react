@@ -1,8 +1,9 @@
-- Namaste React
+# Setup Instructions:
 
-- npx execute the package,
-
-- CDN is not a good way to use react
+1. Clone the repository: [git clone https://github.com/username/repository-name.git]
+2. Navigate to the project directory: [cd repository-name]
+3. Install the dependencies: [npm install]
+4. Start the development server: [npm start]
 
 # How to write code in parcel with git step by step
 
@@ -106,5 +107,6 @@ Type: npm run build
 - Client Side Routing (If we are not calling API then is called Client side routing)
 - Server Side Routing (if we are calling API then this can be called Server side Routing)
 
-# Chunking | Code Spliting | dynamic-bundling | Lazy Loading | On-demand-loading 
+# Chunking | Code Spliting | dynamic-bundling | Lazy Loading | On-demand-loading
+
 # (break down your website/app in smaller chunk)
