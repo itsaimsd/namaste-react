@@ -1,3 +1,10 @@
+# Here are screenshorts
+
+![image](https://github.com/user-attachments/assets/41423264-cebf-4762-884f-d58a8ab57cbd)
+![image](https://github.com/user-attachments/assets/b831fddf-4f0a-46ac-9a5c-f906b9d58ca7)
+
+
+
 # Setup Instructions:
 
 1. Clone the repository: [ git clone https://github.com/username/repository-name.git ]
