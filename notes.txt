@@ -1,0 +1,278 @@
+/*
+<div id= "parent">
+    <div id = "child">
+        <h1>I'm an h1 tag</>
+        <h2>I'm an h2 tag</>
+    </div>   
+    <div id = "child">
+        <h1>I'm an h1 tag</>
+        <h2>I'm an h2 tag</>
+    </div>
+</div>
+
+ReactElement(object) =>HTML(Browser Understands)
+
+*/
+
+/*
+  What type of tag is this
+  attribiues and these are Objects
+  Third one is children . if more than 1 then convert into array
+
+const parent = React.createElement("div", { id: "parent" }, [
+  React.createElement("div", { id: "child" }, [
+    React.createElement("h1", {}, "I  'm an h1 tag"),
+    React.createElement("h2", {}, "I'm an h2 tag"),
+   ]),
+
+*/
+
+/*
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// React.createElement => Object => HTMLElement(render)
+const heading1 = React.createElement(
+  "h1",
+  { id: "heading" },
+  "Namaste React🚀"
+);
+
+// JSX -HTML-Like or XML -Like syntax
+// JSX(transpiled before it reaches the js) - PARCEL -Babel
+// JSX =>Babel transpiles it to React.createElement => ReactElement -Js Object => HTMLElement(render)
+
+// React Element
+const elem = <span>React </span>;
+
+const title = (
+  <h1 className="head" tabIndex={5}>
+    Namaste React Using JSX🚀
+  </h1>
+);
+
+const Heading = () => (
+  <h1 className="head" tabIndex="5">
+    Namaste React Using JSX🚀
+  </h1>
+);
+
+// React Functional Component
+const HeadingComponent = () => (
+  <div id="container">
+    <Heading/>
+    <h1 className="heading">Namaste React Functional Component</h1>
+  </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root2"));
+
+root.render(<HeadingComponent />);
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e1edcf;
+  margin: 0;
+}
+
+/* Header page css  */
+.header {
+  background-color: #f6f4c4;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  border-radius: 10px;
+  left: 20px;
+  right: 20px;
+}
+
+.logo {
+  margin-left: 20px;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-items {
+  padding: 0px 20px;
+}
+
+.nav-items > ul {
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.login {
+  padding: 15px 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #deda64;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background-color: #dfda31;
+  transform: scale(1.07);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Restaurent card css */
+.res-card {
+  margin: 10px 10px 40px 10px;
+  padding: 12px;
+  width: 215px;
+  border-radius: 15px;
+  background: #f0f0f0;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.res-card:hover {
+  transform: scale(1.07);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.res-card > img {
+  border-radius: 15px;
+  width: 215px;
+  height: 155px;
+}
+
+/* Here different page css  */
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  background-color: #fafaf7;
+  padding: 8px;
+  border-radius: 10px;
+  width: 60%;
+  border: none;
+}
+
+.search > button {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  background-color: #deda64;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.search > button:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.filter-btn {
+  padding: 13px;
+  margin: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #deda64;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.res-container {
+  margin: 100px 0px 80px 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.res-logo {
+  width: 100%;
+}
+
+.shimmer-container {
+  margin: 160px 0px 80px 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  margin: 10px 10px 40px 10px;
+  padding: 12px;
+  width: 215px;
+  height: 285px;
+  border-radius: 15px;
+  background: #f0f0f0;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Css for RestaurentMenu */
+
+.menu {
+  margin: 25px;
+}
+
+/* Css for User.jsx */
+.user-card {
+  padding: 10px;
+  border: 2px solid rgb(211, 211, 145);
+  border-radius: 15px;
+  margin: 20px;
+  line-height: 35px;
+
+}
