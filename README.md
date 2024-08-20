@@ -107,5 +107,6 @@ Type: npm run build
 - Client Side Routing (If we are not calling API then is called Client side routing)
 - Server Side Routing (if we are calling API then this can be called Server side Routing)
 
-1. Chunking | Code Spliting | dynamic-bundling | Lazy Loading | On-demand-loading
+1. These are same name 
+  - Chunking | Code Spliting | dynamic-bundling | Lazy Loading | On-demand-loading
   - (break down your website/app in smaller chunk)
