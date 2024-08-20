@@ -1,10 +1,10 @@
-# Namaste React
+- Namaste React
 
-# npx execute the package,
+- npx execute the package,
 
-# CDN is not a good way to use react
+- CDN is not a good way to use react
 
-# How to write code in parcel with git step by step
+- How to write code in parcel with git step by step
 
 - git init
 - git branch -M main
